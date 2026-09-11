@@ -20,7 +20,7 @@ app = Flask(__name__)
 # .env file থেকে environment variables লোড করছি
 load_dotenv()
 
-# Neon PostgreSQL connection string
+# Neon PostgreSQL connection string নিচ্ছি
 DATABASE_URL = os.getenv("DATABASE_URL")
 
 
@@ -29,6 +29,12 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 # =========================================
 
 def get_db():
+
+    # DATABASE_URL না পাওয়া গেলে error দেখাবে
+    if not DATABASE_URL:
+        raise RuntimeError(
+            "DATABASE_URL environment variable পাওয়া যায়নি।"
+        )
 
     # Neon PostgreSQL database-এর সাথে connection তৈরি করছি
     connection = psycopg2.connect(
@@ -64,18 +70,19 @@ def init_db():
         )
     """)
 
-    # পুরোনো database-এ column না থাকলে যোগ করছি
+    # পুরোনো database-এ dashboard_token column না থাকলে যোগ করছি
     cursor.execute("""
         ALTER TABLE invitations
         ADD COLUMN IF NOT EXISTS dashboard_token TEXT
     """)
 
+    # পুরোনো database-এ response column না থাকলে যোগ করছি
     cursor.execute("""
         ALTER TABLE invitations
         ADD COLUMN IF NOT EXISTS response TEXT DEFAULT NULL
     """)
 
-    # পুরোনো invitation-এর token না থাকলে নতুন secure token তৈরি করছি
+    # পুরোনো invitation-এর token না থাকলে খুঁজছি
     cursor.execute("""
         SELECT invitation_id
         FROM invitations
@@ -84,6 +91,7 @@ def init_db():
 
     old_invitations = cursor.fetchall()
 
+    # যেসব invitation-এর token নেই সেগুলোর জন্য token তৈরি করছি
     for invitation in old_invitations:
 
         # নতুন secure dashboard token তৈরি করছি
@@ -197,9 +205,13 @@ def create_invitation():
         )
     )
 
+    # Database save করছি
     connection.commit()
 
+    # Cursor বন্ধ করছি
     cursor.close()
+
+    # Connection বন্ধ করছি
     connection.close()
 
     # =====================================
@@ -259,7 +271,10 @@ def show_invitation(invitation_id):
 
     invitation = cursor.fetchone()
 
+    # Cursor বন্ধ করছি
     cursor.close()
+
+    # Connection বন্ধ করছি
     connection.close()
 
     # Invitation না পাওয়া গেলে
@@ -305,6 +320,7 @@ def invitation_yes(invitation_id):
     # Invitation না থাকলে
     if invitation is None:
 
+        cursor.close()
         connection.close()
 
         return jsonify({
@@ -312,8 +328,12 @@ def invitation_yes(invitation_id):
             "message": "Invitation not found ❤️"
         }), 404
 
-    # YES response save করছি
-    connection.execute(
+    # =====================================
+    # YES RESPONSE SAVE
+    # =====================================
+
+    # এখানে cursor.execute() ব্যবহার করা হয়েছে
+    cursor.execute(
         """
         UPDATE invitations
         SET response = %s
@@ -327,6 +347,9 @@ def invitation_yes(invitation_id):
 
     # Database save করছি
     connection.commit()
+
+    # Cursor বন্ধ করছি
+    cursor.close()
 
     # Connection বন্ধ করছি
     connection.close()
@@ -368,7 +391,10 @@ def dashboard(dashboard_token):
 
     invitation = cursor.fetchone()
 
+    # Cursor বন্ধ করছি
     cursor.close()
+
+    # Connection বন্ধ করছি
     connection.close()
 
     # Token ভুল হলে
@@ -417,7 +443,10 @@ def dashboard_status(dashboard_token):
 
     invitation = cursor.fetchone()
 
+    # Cursor বন্ধ করছি
     cursor.close()
+
+    # Connection বন্ধ করছি
     connection.close()
 
     # Token ভুল হলে
@@ -437,15 +466,21 @@ def dashboard_status(dashboard_token):
 
 
 # =========================================
+# DATABASE INITIALIZATION
+# =========================================
+
+# Gunicorn/production server চালু হলেও
+# database table তৈরি করার জন্য init_db() চালানো হবে
+init_db()
+
+
+# =========================================
 # APPLICATION START
 # =========================================
 
 if __name__ == "__main__":
 
-    # Database initialize করছি
-    init_db()
-
-    # Flask application চালু করছি
+    # Local development server চালু করছি
     app.run(
         debug=True
     )
