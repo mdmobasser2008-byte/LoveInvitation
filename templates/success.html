@@ -1,0 +1,3135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#100014">
+
+    <title>Invitation Created ❤️</title>
+
+    <link rel="icon"
+          href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E❤️%3C/text%3E%3C/svg%3E">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+
+
+    <style>
+
+        /* =========================================
+           PREMIUM SUCCESS PAGE
+        ========================================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            overflow-x: hidden;
+
+            font-family:
+                Poppins,
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            color: white;
+
+            background:
+                radial-gradient(
+                    circle at 15% 15%,
+                    rgba(255, 20, 147, 0.22),
+                    transparent 32%
+                ),
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(135, 40, 255, 0.18),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 50% 100%,
+                    rgba(255, 0, 128, 0.16),
+                    transparent 38%
+                ),
+                linear-gradient(
+                    135deg,
+                    #030006 0%,
+                    #150012 48%,
+                    #050008 100%
+                );
+        }
+
+
+        /* =========================================
+           BACKGROUND
+        ========================================= */
+
+        .success-body {
+            position: relative;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 55px 18px;
+
+            isolation: isolate;
+        }
+
+
+        .success-body::before {
+            content: "";
+
+            position: fixed;
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(0,0,0,0.38),
+                    rgba(25,0,30,0.18),
+                    rgba(0,0,0,0.48)
+                );
+
+            pointer-events: none;
+
+            z-index: -5;
+        }
+
+
+        .success-body::after {
+            content: "";
+
+            position: fixed;
+
+            width: 650px;
+            height: 650px;
+
+            left: 50%;
+            top: 50%;
+
+            transform:
+                translate(-50%, -50%);
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(255,20,147,0.09),
+                    transparent 68%
+                );
+
+            filter: blur(20px);
+
+            pointer-events: none;
+
+            z-index: -6;
+
+            animation:
+                centerGlow 7s ease-in-out infinite alternate;
+        }
+
+
+        @keyframes centerGlow {
+
+            from {
+                transform:
+                    translate(-50%, -50%)
+                    scale(0.85);
+            }
+
+            to {
+                transform:
+                    translate(-50%, -50%)
+                    scale(1.25);
+            }
+
+        }
+
+
+        /* =========================================
+           GLOW ORBS
+        ========================================= */
+
+        .success-bg-glow {
+            position: fixed;
+
+            border-radius: 50%;
+
+            pointer-events: none;
+
+            filter: blur(8px);
+
+            z-index: -2;
+        }
+
+
+        .glow-one {
+
+            width: 330px;
+            height: 330px;
+
+            top: -160px;
+            left: -120px;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(255,20,147,0.25),
+                    transparent 70%
+                );
+
+            animation:
+                glowMoveOne 8s ease-in-out infinite alternate;
+        }
+
+
+        .glow-two {
+
+            width: 420px;
+            height: 420px;
+
+            right: -200px;
+            top: 20%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(124,58,237,0.22),
+                    transparent 70%
+                );
+
+            animation:
+                glowMoveTwo 10s ease-in-out infinite alternate;
+        }
+
+
+        .glow-three {
+
+            width: 300px;
+            height: 300px;
+
+            bottom: -150px;
+            left: 35%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(255,0,128,0.18),
+                    transparent 70%
+                );
+
+            animation:
+                glowMoveThree 9s ease-in-out infinite alternate;
+        }
+
+
+        @keyframes glowMoveOne {
+
+            from {
+                transform:
+                    translate(0,0)
+                    scale(1);
+            }
+
+            to {
+                transform:
+                    translate(100px,120px)
+                    scale(1.25);
+            }
+
+        }
+
+
+        @keyframes glowMoveTwo {
+
+            from {
+                transform:
+                    translate(0,0)
+                    scale(1);
+            }
+
+            to {
+                transform:
+                    translate(-120px,80px)
+                    scale(1.2);
+            }
+
+        }
+
+
+        @keyframes glowMoveThree {
+
+            from {
+                transform:
+                    translateY(0)
+                    scale(1);
+            }
+
+            to {
+                transform:
+                    translateY(-100px)
+                    scale(1.25);
+            }
+
+        }
+
+
+        /* =========================================
+           FLOATING HEARTS
+        ========================================= */
+
+        .success-floating-hearts {
+            position: fixed;
+            inset: 0;
+
+            overflow: hidden;
+
+            pointer-events: none;
+
+            z-index: -1;
+        }
+
+
+        .success-floating-hearts span {
+
+            position: absolute;
+
+            bottom: -60px;
+
+            opacity: 0;
+
+            font-size: 22px;
+
+            filter:
+                drop-shadow(
+                    0 0 10px
+                    rgba(255,20,147,0.35)
+                );
+
+            animation:
+                successHeartFloat
+                linear infinite;
+        }
+
+
+        .success-floating-hearts span:nth-child(1) {
+            left: 5%;
+            animation-duration: 9s;
+            animation-delay: 0s;
+        }
+
+
+        .success-floating-hearts span:nth-child(2) {
+            left: 17%;
+            animation-duration: 11s;
+            animation-delay: 2s;
+        }
+
+
+        .success-floating-hearts span:nth-child(3) {
+            left: 29%;
+            animation-duration: 8s;
+            animation-delay: 4s;
+        }
+
+
+        .success-floating-hearts span:nth-child(4) {
+            left: 43%;
+            animation-duration: 12s;
+            animation-delay: 1s;
+        }
+
+
+        .success-floating-hearts span:nth-child(5) {
+            left: 57%;
+            animation-duration: 9s;
+            animation-delay: 3s;
+        }
+
+
+        .success-floating-hearts span:nth-child(6) {
+            left: 69%;
+            animation-duration: 11s;
+            animation-delay: 5s;
+        }
+
+
+        .success-floating-hearts span:nth-child(7) {
+            left: 82%;
+            animation-duration: 8s;
+            animation-delay: 2s;
+        }
+
+
+        .success-floating-hearts span:nth-child(8) {
+            left: 94%;
+            animation-duration: 10s;
+            animation-delay: 6s;
+        }
+
+
+        @keyframes successHeartFloat {
+
+            0% {
+
+                transform:
+                    translateY(0)
+                    translateX(0)
+                    rotate(0deg)
+                    scale(0.55);
+
+                opacity: 0;
+            }
+
+
+            12% {
+                opacity: 0.65;
+            }
+
+
+            50% {
+
+                transform:
+                    translateY(-55vh)
+                    translateX(25px)
+                    rotate(180deg)
+                    scale(1);
+            }
+
+
+            90% {
+                opacity: 0.35;
+            }
+
+
+            100% {
+
+                transform:
+                    translateY(-120vh)
+                    translateX(-25px)
+                    rotate(360deg)
+                    scale(1.3);
+
+                opacity: 0;
+            }
+
+        }
+
+
+        /* =========================================
+           MAIN CARD
+        ========================================= */
+
+        .success-container {
+
+            width: 100%;
+
+            max-width: 780px;
+
+            position: relative;
+
+            padding: 48px 38px 32px;
+
+            text-align: center;
+
+            border-radius: 38px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,0.13),
+                    rgba(255,255,255,0.045)
+                );
+
+            border:
+                1px solid
+                rgba(255,255,255,0.18);
+
+            backdrop-filter:
+                blur(32px)
+                saturate(150%);
+
+            -webkit-backdrop-filter:
+                blur(32px)
+                saturate(150%);
+
+            box-shadow:
+                0 40px 120px
+                rgba(0,0,0,0.62),
+
+                0 0 80px
+                rgba(255,20,147,0.08),
+
+                inset 0 1px 0
+                rgba(255,255,255,0.20),
+
+                inset 0 0 45px
+                rgba(255,255,255,0.025);
+
+            overflow: hidden;
+
+            animation:
+                successCardEnter
+                1s
+                cubic-bezier(.2,.8,.2,1);
+        }
+
+
+        .success-container::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            top: -170px;
+            left: -130px;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(255,255,255,0.12),
+                    transparent 70%
+                );
+
+            pointer-events: none;
+
+            animation:
+                cardShine
+                7s
+                ease-in-out
+                infinite alternate;
+        }
+
+
+        .success-container::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 180px;
+            height: 180px;
+
+            right: -100px;
+            bottom: -100px;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(255,20,147,0.15),
+                    transparent 70%
+                );
+
+            filter: blur(8px);
+
+            pointer-events: none;
+        }
+
+
+        @keyframes successCardEnter {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    perspective(1400px)
+                    translateY(65px)
+                    rotateX(8deg)
+                    scale(0.92);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    perspective(1400px)
+                    translateY(0)
+                    rotateX(0)
+                    scale(1);
+            }
+
+        }
+
+
+        @keyframes cardShine {
+
+            from {
+                transform:
+                    translate(0,0);
+            }
+
+            to {
+                transform:
+                    translate(620px,420px);
+            }
+
+        }
+
+
+        /* =========================================
+           HEART
+        ========================================= */
+
+        .success-heart-wrapper {
+
+            width: 120px;
+            height: 120px;
+
+            margin:
+                0 auto 24px;
+
+            position: relative;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .success-heart-ring {
+
+            position: absolute;
+
+            inset: 0;
+
+            border-radius: 50%;
+
+            border:
+                1px solid
+                rgba(255,105,180,0.35);
+
+            box-shadow:
+                0 0 35px
+                rgba(255,20,147,0.20);
+
+            animation:
+                ringPulse
+                2.4s
+                ease-in-out
+                infinite;
+        }
+
+
+        .success-heart-ring::before,
+        .success-heart-ring::after {
+
+            content: "";
+
+            position: absolute;
+
+            border-radius: 50%;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.10);
+        }
+
+
+        .success-heart-ring::before {
+            inset: 9px;
+        }
+
+
+        .success-heart-ring::after {
+            inset: 18px;
+        }
+
+
+        .success-main-heart {
+
+            width: 82px;
+            height: 82px;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 50%;
+
+            font-size: 43px;
+
+            position: relative;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #ff1493,
+                    #ff3ca8 48%,
+                    #ff7ac6
+                );
+
+            border:
+                1px solid
+                rgba(255,255,255,0.30);
+
+            box-shadow:
+
+                0 20px 50px
+                rgba(255,20,147,0.42),
+
+                0 0 55px
+                rgba(255,20,147,0.20),
+
+                inset 0 5px 14px
+                rgba(255,255,255,0.28);
+
+            animation:
+                mainHeartBeat
+                1.7s
+                ease-in-out
+                infinite;
+        }
+
+
+        .success-main-heart::after {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 7px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.18);
+        }
+
+
+        @keyframes ringPulse {
+
+            0%,
+            100% {
+                transform:
+                    scale(0.95);
+
+                opacity: 0.55;
+            }
+
+            50% {
+                transform:
+                    scale(1.12);
+
+                opacity: 1;
+            }
+
+        }
+
+
+        @keyframes mainHeartBeat {
+
+            0%,
+            100% {
+                transform:
+                    scale(1);
+            }
+
+            45% {
+                transform:
+                    scale(1.05);
+            }
+
+            55% {
+                transform:
+                    scale(1.13);
+            }
+
+            65% {
+                transform:
+                    scale(1.04);
+            }
+
+        }
+
+
+        /* =========================================
+           TITLE
+        ========================================= */
+
+        .success-title {
+
+            margin:
+                0 auto 14px;
+
+            font-family:
+                "Playfair Display",
+                Georgia,
+                serif;
+
+            font-size: 43px;
+
+            line-height: 1.2;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #ffffff,
+                    #ffc1e3,
+                    #ffffff,
+                    #ff91ca,
+                    #ffffff
+                );
+
+            background-size: 260% auto;
+
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+            animation:
+                titleShine
+                4s
+                linear
+                infinite;
+
+            filter:
+                drop-shadow(
+                    0 0 18px
+                    rgba(255,20,147,0.22)
+                );
+        }
+
+
+        .success-title span {
+            display: inline-block;
+        }
+
+
+        @keyframes titleShine {
+
+            from {
+                background-position:
+                    0% center;
+            }
+
+            to {
+                background-position:
+                    260% center;
+            }
+
+        }
+
+
+        /* =========================================
+           SUBTITLE
+        ========================================= */
+
+        .success-subtitle {
+
+            max-width: 570px;
+
+            margin:
+                0 auto 22px;
+
+            color: #ffe5f2;
+
+            font-size: 15px;
+
+            line-height: 1.8;
+
+            opacity: 0.92;
+        }
+
+
+        /* =========================================
+           SUCCESS BADGE
+        ========================================= */
+
+        .success-message {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            padding:
+                10px 17px;
+
+            margin-bottom: 30px;
+
+            border-radius: 999px;
+
+            color: #ffd8ec;
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            background:
+                rgba(255,20,147,0.09);
+
+            border:
+                1px solid
+                rgba(255,105,180,0.20);
+
+            box-shadow:
+                inset 0 1px 0
+                rgba(255,255,255,0.10),
+
+                0 8px 30px
+                rgba(255,20,147,0.08);
+
+            animation:
+                badgeFloat
+                3s
+                ease-in-out
+                infinite;
+        }
+
+
+        .success-sparkle {
+            animation:
+                sparkleRotate
+                2s
+                ease-in-out
+                infinite;
+        }
+
+
+        @keyframes badgeFloat {
+
+            0%,
+            100% {
+                transform:
+                    translateY(0);
+            }
+
+            50% {
+                transform:
+                    translateY(-4px);
+            }
+
+        }
+
+
+        @keyframes sparkleRotate {
+
+            0%,
+            100% {
+                transform:
+                    scale(1)
+                    rotate(0deg);
+            }
+
+            50% {
+                transform:
+                    scale(1.2)
+                    rotate(15deg);
+            }
+
+        }
+
+
+        /* =========================================
+           LINK SECTION
+        ========================================= */
+
+        .link-section {
+
+            text-align: left;
+
+            margin-bottom: 27px;
+        }
+
+
+        .link-section label {
+
+            display: block;
+
+            margin-bottom: 9px;
+
+            color: #ffc4e3;
+
+            font-size: 13px;
+
+            font-weight: 600;
+        }
+
+
+        .link-box {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            padding: 7px;
+
+            border-radius: 19px;
+
+            background:
+                rgba(0,0,0,0.25);
+
+            border:
+                1px solid
+                rgba(255,255,255,0.12);
+
+            box-shadow:
+                inset 0 1px 0
+                rgba(255,255,255,0.08),
+
+                0 15px 40px
+                rgba(0,0,0,0.18);
+        }
+
+
+        #invitationLink {
+
+            flex: 1;
+
+            min-width: 0;
+
+            height: 48px;
+
+            border: none;
+
+            outline: none;
+
+            padding:
+                0 14px;
+
+            border-radius: 13px;
+
+            color: #ffeaf6;
+
+            background:
+                rgba(255,255,255,0.07);
+
+            font-family:
+                monospace;
+
+            font-size: 12px;
+        }
+
+
+        #invitationLink::selection {
+            background: rgba(255,20,147,0.35);
+        }
+
+
+        #copyBtn {
+
+            height: 48px;
+
+            min-width: 105px;
+
+            border: none;
+
+            border-radius: 13px;
+
+            cursor: pointer;
+
+            color: white;
+
+            font-family:
+                Poppins,
+                sans-serif;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff1493,
+                    #e91e63
+                );
+
+            box-shadow:
+                0 10px 25px
+                rgba(255,20,147,0.25),
+
+                inset 0 1px 0
+                rgba(255,255,255,0.28);
+
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+
+        #copyBtn:hover {
+
+            transform:
+                translateY(-3px)
+                scale(1.03);
+
+            box-shadow:
+                0 15px 35px
+                rgba(255,20,147,0.42);
+        }
+
+
+        #copyBtn:active {
+            transform:
+                scale(0.97);
+        }
+
+
+        #copyBtn.copied {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #00a844,
+                    #00c853
+                );
+
+            box-shadow:
+                0 10px 30px
+                rgba(0,200,83,0.35);
+        }
+
+
+        #copyIcon {
+            margin-right: 5px;
+        }
+
+
+        /* =========================================
+           SHARE TITLE
+        ========================================= */
+
+        .social-share-title {
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            gap: 10px;
+
+            margin:
+                0 0 17px;
+
+            color: #ffe2f0;
+
+            font-size: 14px;
+
+            font-weight: 600;
+        }
+
+
+        .social-share-title span {
+            animation:
+                titleHeart
+                2s
+                ease-in-out
+                infinite;
+        }
+
+
+        @keyframes titleHeart {
+
+            0%,
+            100% {
+                transform:
+                    scale(1);
+            }
+
+            50% {
+                transform:
+                    scale(1.22);
+            }
+
+        }
+
+
+        /* =========================================
+           SOCIAL BUTTONS
+        ========================================= */
+
+        .social-share-buttons {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            gap: 16px;
+
+            margin-bottom: 30px;
+        }
+
+
+        .social-share-btn {
+
+            width: 92px;
+            height: 92px;
+
+            position: relative;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 27px;
+
+            color: white;
+
+            text-decoration: none;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.18);
+
+            cursor: pointer;
+
+            overflow: visible;
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+
+        .social-share-btn::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            border-radius: inherit;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,0.22),
+                    transparent 45%
+                );
+
+            pointer-events: none;
+        }
+
+
+        .social-share-btn::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 70px;
+            height: 15px;
+
+            bottom: -10px;
+            left: 50%;
+
+            transform:
+                translateX(-50%);
+
+            border-radius: 50%;
+
+            background:
+                rgba(0,0,0,0.30);
+
+            filter: blur(8px);
+
+            z-index: -1;
+
+            transition:
+                transform 0.3s ease,
+                opacity 0.3s ease;
+        }
+
+
+        .social-share-btn:hover {
+
+            transform:
+                translateY(-9px)
+                rotateX(5deg)
+                scale(1.06);
+        }
+
+
+        .social-share-btn:hover::after {
+
+            transform:
+                translateX(-50%)
+                scale(0.75);
+
+            opacity: 0.65;
+        }
+
+
+        .social-icon {
+
+            width: 55px;
+            height: 55px;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 18px;
+
+            position: relative;
+
+            box-shadow:
+                inset 0 2px 5px
+                rgba(255,255,255,0.30),
+
+                inset 0 -5px 10px
+                rgba(0,0,0,0.16),
+
+                0 10px 22px
+                rgba(0,0,0,0.20);
+
+            transition:
+                transform 0.3s ease;
+        }
+
+
+        .social-share-btn:hover .social-icon {
+
+            transform:
+                translateY(-2px)
+                rotate(-4deg)
+                scale(1.08);
+        }
+
+
+        .social-icon svg {
+
+            width: 39px;
+            height: 39px;
+
+            display: block;
+
+            filter:
+                drop-shadow(
+                    0 4px 5px
+                    rgba(0,0,0,0.22)
+                );
+        }
+
+
+        /* =========================================
+           WHATSAPP
+        ========================================= */
+
+        .whatsapp-btn {
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(0,180,70,0.30),
+                    rgba(0,90,45,0.18)
+                );
+
+            box-shadow:
+                0 18px 40px
+                rgba(0,200,83,0.17),
+
+                inset 0 1px 0
+                rgba(255,255,255,0.20);
+        }
+
+
+        .whatsapp-btn:hover {
+
+            box-shadow:
+                0 25px 55px
+                rgba(0,200,83,0.30),
+
+                0 0 30px
+                rgba(0,200,83,0.16);
+        }
+
+
+        .whatsapp-btn .social-icon {
+
+            color: #25D366;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #25D366,
+                    #0da94b
+                );
+        }
+
+
+        /* =========================================
+           MESSENGER
+        ========================================= */
+
+        .messenger-btn {
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(30,130,255,0.28),
+                    rgba(60,20,190,0.18)
+                );
+
+            box-shadow:
+                0 18px 40px
+                rgba(80,80,255,0.16),
+
+                inset 0 1px 0
+                rgba(255,255,255,0.20);
+        }
+
+
+        .messenger-btn:hover {
+
+            box-shadow:
+                0 25px 55px
+                rgba(80,80,255,0.30),
+
+                0 0 30px
+                rgba(80,130,255,0.16);
+        }
+
+
+        .messenger-btn .social-icon {
+
+            color: #168AFF;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #168AFF,
+                    #6755E8
+                );
+        }
+
+
+        /* =========================================
+           MORE SHARE
+        ========================================= */
+
+        .more-share-btn {
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,20,147,0.25),
+                    rgba(120,30,180,0.16)
+                );
+
+            box-shadow:
+                0 18px 40px
+                rgba(255,20,147,0.16),
+
+                inset 0 1px 0
+                rgba(255,255,255,0.20);
+        }
+
+
+        .more-share-btn:hover {
+
+            box-shadow:
+                0 25px 55px
+                rgba(255,20,147,0.30),
+
+                0 0 30px
+                rgba(255,20,147,0.16);
+        }
+
+
+        .more-share-btn .social-icon {
+
+            color: #ff55ad;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #ff1493,
+                    #a855f7
+                );
+
+            animation:
+                shareIconFloat
+                2.4s
+                ease-in-out
+                infinite;
+        }
+
+
+        @keyframes shareIconFloat {
+
+            0%,
+            100% {
+                transform:
+                    translateY(0)
+                    rotate(0deg);
+            }
+
+            50% {
+                transform:
+                    translateY(-4px)
+                    rotate(5deg);
+            }
+
+        }
+
+
+        .more-share-btn.share-success {
+
+            transform:
+                scale(1.15)
+                rotate(4deg);
+
+            box-shadow:
+                0 0 50px
+                rgba(255,20,147,0.65);
+        }
+
+
+        /* =========================================
+           TOOLTIP
+        ========================================= */
+
+        .share-tooltip {
+
+            position: absolute;
+
+            left: 50%;
+            bottom: -38px;
+
+            transform:
+                translateX(-50%)
+                translateY(6px);
+
+            padding:
+                6px 10px;
+
+            white-space: nowrap;
+
+            border-radius: 8px;
+
+            color: white;
+
+            background:
+                rgba(15,0,18,0.92);
+
+            border:
+                1px solid
+                rgba(255,255,255,0.12);
+
+            font-size: 10px;
+
+            opacity: 0;
+
+            pointer-events: none;
+
+            transition:
+                opacity 0.25s ease,
+                transform 0.25s ease;
+
+            z-index: 100;
+        }
+
+
+        .social-share-btn:hover .share-tooltip {
+
+            opacity: 1;
+
+            transform:
+                translateX(-50%)
+                translateY(0);
+        }
+
+
+        /* =========================================
+           OPEN BUTTONS
+        ========================================= */
+
+        .open-button {
+
+            width: 100%;
+
+            min-height: 61px;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            gap: 11px;
+
+            position: relative;
+
+            margin-bottom: 13px;
+
+            padding:
+                15px 20px;
+
+            border-radius: 19px;
+
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 15px;
+
+            font-weight: 700;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff1493,
+                    #e91e63 45%,
+                    #a855f7
+                );
+
+            border:
+                1px solid
+                rgba(255,255,255,0.20);
+
+            box-shadow:
+                0 16px 40px
+                rgba(255,20,147,0.25),
+
+                inset 0 1px 0
+                rgba(255,255,255,0.30);
+
+            overflow: hidden;
+
+            transition:
+                transform 0.28s ease,
+                box-shadow 0.28s ease;
+        }
+
+
+        .open-button::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            left: -120%;
+
+            width: 65%;
+            height: 100%;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    rgba(255,255,255,0.32),
+                    transparent
+                );
+
+            transform:
+                skewX(-20deg);
+
+            transition:
+                left 0.65s ease;
+        }
+
+
+        .open-button:hover::before {
+            left: 155%;
+        }
+
+
+        .open-button:hover {
+
+            transform:
+                translateY(-4px)
+                scale(1.012);
+
+            box-shadow:
+                0 22px 55px
+                rgba(255,20,147,0.38),
+
+                0 0 25px
+                rgba(255,20,147,0.12),
+
+                inset 0 1px 0
+                rgba(255,255,255,0.35);
+        }
+
+
+        .open-button-icon {
+            font-size: 23px;
+        }
+
+
+        .open-arrow {
+
+            position: absolute;
+
+            right: 19px;
+
+            font-size: 21px;
+
+            transition:
+                transform 0.25s ease;
+        }
+
+
+        .open-button:hover .open-arrow {
+            transform:
+                translateX(5px);
+        }
+
+
+        /* =========================================
+           DASHBOARD
+        ========================================= */
+
+        .dashboard-button {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #7616b8,
+                    #b21fce 50%,
+                    #ff3b9d
+                );
+
+            box-shadow:
+                0 16px 40px
+                rgba(178,31,206,0.24),
+
+                inset 0 1px 0
+                rgba(255,255,255,0.28);
+        }
+
+
+        .dashboard-button:hover {
+
+            box-shadow:
+                0 22px 55px
+                rgba(178,31,206,0.38),
+
+                0 0 25px
+                rgba(255,20,147,0.12);
+        }
+
+
+        /* =========================================
+           BOTTOM ACTIONS
+        ========================================= */
+
+        .success-actions {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 24px;
+
+            margin-top: 23px;
+        }
+
+
+        .success-actions a {
+
+            color: #ffc9e4;
+
+            text-decoration: none;
+
+            font-size: 12px;
+
+            font-weight: 600;
+
+            transition:
+                color 0.25s ease,
+                transform 0.25s ease;
+        }
+
+
+        .success-actions a:hover {
+
+            color: white;
+
+            transform:
+                translateY(-2px);
+        }
+
+
+        .success-actions span {
+            margin-right: 4px;
+        }
+
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        .success-footer {
+
+            margin:
+                28px 0 0;
+
+            color:
+                rgba(255,220,239,0.55);
+
+            font-size: 11px;
+
+            letter-spacing: 0.3px;
+        }
+
+
+        .success-footer span {
+
+            display: inline-block;
+
+            animation:
+                footerHeart
+                1.5s
+                ease-in-out
+                infinite;
+        }
+
+
+        @keyframes footerHeart {
+
+            0%,
+            100% {
+                transform:
+                    scale(1);
+            }
+
+            50% {
+                transform:
+                    scale(1.3);
+            }
+
+        }
+
+
+        /* =========================================
+           MINI HEARTS
+        ========================================= */
+
+        .mini-success-heart {
+
+            position: fixed;
+
+            z-index: 999999;
+
+            pointer-events: none;
+
+            font-size: 20px;
+
+            animation:
+                miniHeartPop
+                1.4s
+                ease-out
+                forwards;
+        }
+
+
+        @keyframes miniHeartPop {
+
+            0% {
+
+                opacity: 0;
+
+                transform:
+                    translate(0,0)
+                    scale(0.3);
+            }
+
+            15% {
+                opacity: 1;
+            }
+
+            100% {
+
+                opacity: 0;
+
+                transform:
+                    translate(
+                        var(--random-x),
+                        -100px
+                    )
+                    scale(1.4)
+                    rotate(25deg);
+            }
+
+        }
+
+
+        /* =========================================
+           BIG FLOATING HEARTS
+        ========================================= */
+
+        .success-heart-float {
+
+            position: fixed;
+
+            bottom: -70px;
+
+            z-index: 999;
+
+            pointer-events: none;
+
+            user-select: none;
+
+            animation:
+                bigHeartFloat
+                linear
+                forwards;
+
+            filter:
+                drop-shadow(
+                    0 0 8px
+                    rgba(255,20,147,0.35)
+                );
+        }
+
+
+        @keyframes bigHeartFloat {
+
+            0% {
+
+                opacity: 0;
+
+                transform:
+                    translateY(0)
+                    scale(0.5)
+                    rotate(0deg);
+            }
+
+            12% {
+                opacity: 0.8;
+            }
+
+            50% {
+
+                transform:
+                    translateY(-55vh)
+                    translateX(25px)
+                    scale(1)
+                    rotate(180deg);
+            }
+
+            100% {
+
+                opacity: 0;
+
+                transform:
+                    translateY(-120vh)
+                    translateX(-25px)
+                    scale(1.4)
+                    rotate(360deg);
+            }
+
+        }
+
+
+        /* =========================================
+           BUTTON PRESS
+        ========================================= */
+
+        .button-pressed {
+
+            transform:
+                scale(0.96) !important;
+        }
+
+
+        /* =========================================
+           MOBILE
+        ========================================= */
+
+        @media (max-width: 600px) {
+
+            .success-body {
+
+                min-height: 100svh;
+
+                padding:
+                    25px 12px;
+            }
+
+
+            .success-container {
+
+                padding:
+                    35px 17px 27px;
+
+                border-radius: 29px;
+            }
+
+
+            .success-heart-wrapper {
+
+                width: 100px;
+                height: 100px;
+
+                margin-bottom: 19px;
+            }
+
+
+            .success-main-heart {
+
+                width: 70px;
+                height: 70px;
+
+                font-size: 37px;
+            }
+
+
+            .success-title {
+
+                font-size: 31px;
+
+                line-height: 1.25;
+            }
+
+
+            .success-subtitle {
+
+                font-size: 13px;
+
+                line-height: 1.75;
+            }
+
+
+            .success-message {
+
+                font-size: 11px;
+
+                padding:
+                    8px 12px;
+
+                margin-bottom: 23px;
+            }
+
+
+            .link-section label {
+
+                font-size: 12px;
+            }
+
+
+            .link-box {
+
+                padding: 6px;
+
+                gap: 6px;
+
+                border-radius: 16px;
+            }
+
+
+            #invitationLink {
+
+                height: 45px;
+
+                font-size: 10px;
+
+                padding:
+                    0 9px;
+            }
+
+
+            #copyBtn {
+
+                min-width: 78px;
+
+                height: 45px;
+
+                font-size: 11px;
+
+                padding:
+                    0 8px;
+            }
+
+
+            .social-share-buttons {
+
+                gap: 10px;
+
+                margin-bottom: 25px;
+            }
+
+
+            .social-share-btn {
+
+                width: 78px;
+                height: 78px;
+
+                border-radius: 23px;
+            }
+
+
+            .social-icon {
+
+                width: 48px;
+                height: 48px;
+
+                border-radius: 15px;
+            }
+
+
+            .social-icon svg {
+
+                width: 33px;
+                height: 33px;
+            }
+
+
+            .share-tooltip {
+                display: none;
+            }
+
+
+            .open-button {
+
+                min-height: 57px;
+
+                border-radius: 17px;
+
+                font-size: 13px;
+            }
+
+
+            .open-button-icon {
+                font-size: 20px;
+            }
+
+
+            .open-arrow {
+                right: 15px;
+            }
+
+
+            .success-actions {
+
+                gap: 19px;
+
+                margin-top: 19px;
+            }
+
+
+            .success-footer {
+
+                margin-top: 23px;
+            }
+
+        }
+
+
+        /* =========================================
+           VERY SMALL SCREEN
+        ========================================= */
+
+        @media (max-width: 380px) {
+
+            .success-container {
+
+                padding:
+                    28px 13px 23px;
+            }
+
+
+            .success-title {
+                font-size: 27px;
+            }
+
+
+            .social-share-buttons {
+                gap: 7px;
+            }
+
+
+            .social-share-btn {
+
+                width: 70px;
+                height: 70px;
+
+                border-radius: 20px;
+            }
+
+
+            .social-icon {
+
+                width: 43px;
+                height: 43px;
+
+                border-radius: 13px;
+            }
+
+
+            .social-icon svg {
+
+                width: 29px;
+                height: 29px;
+            }
+
+
+            .success-actions {
+
+                gap: 14px;
+            }
+
+        }
+
+
+        /* =========================================
+           REDUCE MOTION
+        ========================================= */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+
+                animation-duration:
+                    0.01ms !important;
+
+                animation-iteration-count:
+                    1 !important;
+
+                scroll-behavior:
+                    auto !important;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body class="success-body">
+
+
+    <!-- =========================================
+         BACKGROUND GLOWS
+    ========================================== -->
+
+    <div class="success-bg-glow glow-one"></div>
+
+    <div class="success-bg-glow glow-two"></div>
+
+    <div class="success-bg-glow glow-three"></div>
+
+
+    <!-- =========================================
+         FLOATING HEARTS
+    ========================================== -->
+
+    <div class="success-floating-hearts">
+
+        <span>❤️</span>
+        <span>💕</span>
+        <span>💖</span>
+        <span>💗</span>
+        <span>💓</span>
+        <span>💞</span>
+        <span>💘</span>
+        <span>❤️</span>
+
+    </div>
+
+
+    <!-- =========================================
+         MAIN CARD
+    ========================================== -->
+
+    <main class="success-container">
+
+
+        <!-- =====================================
+             3D HEART
+        ====================================== -->
+
+        <div class="success-heart-wrapper">
+
+            <div class="success-heart-ring"></div>
+
+            <div class="success-main-heart">
+                💖
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             TITLE
+        ====================================== -->
+
+        <h1 class="success-title">
+
+            Your Invitation
+
+            <span>
+                Is Ready! ❤️
+            </span>
+
+        </h1>
+
+
+        <!-- =====================================
+             SUBTITLE
+        ====================================== -->
+
+        <p class="success-subtitle">
+
+            Your little piece of love is ready
+            to be shared with someone special. 💕
+
+        </p>
+
+
+        <!-- =====================================
+             SUCCESS BADGE
+        ====================================== -->
+
+        <div class="success-message">
+
+            <span class="success-sparkle">
+                ✨
+            </span>
+
+            <span>
+                Invitation created successfully!
+            </span>
+
+            <span class="success-sparkle">
+                ✨
+            </span>
+
+        </div>
+
+
+        <!-- =====================================
+             INVITATION LINK
+        ====================================== -->
+
+        <div class="link-section">
+
+            <label>
+                🔗 Your Invitation Link
+            </label>
+
+
+            <div class="link-box">
+
+                <input
+                    type="text"
+                    id="invitationLink"
+                    value="{{ invitation_link }}"
+                    readonly
+                    aria-label="Invitation Link"
+                >
+
+
+                <button
+                    type="button"
+                    id="copyBtn"
+                    onclick="copyLink()"
+                    aria-label="Copy invitation link">
+
+                    <span id="copyIcon">
+                        📋
+                    </span>
+
+                    <span id="copyText">
+                        Copy
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             SHARE TITLE
+        ====================================== -->
+
+        <div class="social-share-title">
+
+            <span>✨</span>
+
+            <span>
+                Share your invitation
+            </span>
+
+            <span>❤️</span>
+
+        </div>
+
+
+        <!-- =====================================
+             SOCIAL BUTTONS
+        ====================================== -->
+
+        <div class="social-share-buttons">
+
+
+            <!-- WHATSAPP -->
+
+            <a
+                href="#"
+                id="whatsappBtn"
+                class="social-share-btn whatsapp-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Share on WhatsApp"
+                title="Share on WhatsApp">
+
+                <span class="social-icon">
+
+                    <svg
+                        viewBox="0 0 32 32"
+                        aria-hidden="true">
+
+                        <path
+                            d="M16 3C8.82 3 3 8.82 3 16c0 2.3.6 4.55 1.73 6.53L3 29l6.67-1.7A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3Z"
+                            fill="currentColor"/>
+
+                        <path
+                            d="M22.52 18.96c-.36-.18-2.1-1.04-2.43-1.16-.33-.12-.57-.18-.81.18-.24.36-.93 1.16-1.14 1.4-.21.24-.42.27-.78.09-.36-.18-1.53-.56-2.92-1.8-1.08-.96-1.81-2.15-2.02-2.51-.21-.36-.02-.56.16-.74.16-.16.36-.42.54-.63.18-.21.24-.36.36-.6.12-.24.06-.45-.03-.63-.09-.18-.81-1.95-1.11-2.67-.29-.7-.59-.61-.81-.62h-.69c-.24 0-.63.09-.96.45-.33.36-1.26 1.23-1.26 3s1.29 3.48 1.47 3.72c.18.24 2.54 3.88 6.16 5.44.86.37 1.53.59 2.05.75.86.27 1.65.23 2.27.14.69-.1 2.1-.86 2.4-1.68.3-.83.3-1.53.21-1.68-.09-.15-.33-.24-.69-.42Z"
+                            fill="white"/>
+
+                    </svg>
+
+                </span>
+
+                <span class="share-tooltip">
+                    WhatsApp
+                </span>
+
+            </a>
+
+
+            <!-- MESSENGER -->
+
+            <a
+                href="#"
+                id="messengerBtn"
+                class="social-share-btn messenger-btn"
+                aria-label="Share on Messenger"
+                title="Share on Messenger">
+
+                <span class="social-icon">
+
+                    <svg
+                        viewBox="0 0 32 32"
+                        aria-hidden="true">
+
+                        <path
+                            d="M16 3C8.27 3 2.5 8.45 2.5 15.67c0 3.98 1.98 7.5 5.17 9.67v4.16l3.87-2.13c1.42.39 2.92.6 4.46.6 7.73 0 13.5-5.45 13.5-12.27C29.5 8.45 23.73 3 16 3Z"
+                            fill="currentColor"/>
+
+                        <path
+                            d="m9.2 18.2 4.2-4.4 3.15 2.2 5.95-3.35-4.18 4.43-3.12-2.18-6 3.3Z"
+                            fill="white"/>
+
+                    </svg>
+
+                </span>
+
+                <span class="share-tooltip">
+                    Messenger
+                </span>
+
+            </a>
+
+
+            <!-- MORE SHARE -->
+
+            <button
+                type="button"
+                id="moreShareBtn"
+                class="social-share-btn more-share-btn"
+                onclick="shareInvitation()"
+                aria-label="More sharing options"
+                title="More sharing options">
+
+                <span class="social-icon">
+
+                    <svg
+                        viewBox="0 0 32 32"
+                        aria-hidden="true">
+
+                        <circle
+                            cx="7"
+                            cy="16"
+                            r="3.2"
+                            fill="currentColor"/>
+
+                        <circle
+                            cx="24"
+                            cy="8"
+                            r="3.2"
+                            fill="currentColor"/>
+
+                        <circle
+                            cx="24"
+                            cy="24"
+                            r="3.2"
+                            fill="currentColor"/>
+
+                        <path
+                            d="M9.7 14.7 21 9.4M9.7 17.3 21 22.6"
+                            stroke="currentColor"
+                            stroke-width="3"
+                            stroke-linecap="round"/>
+
+                    </svg>
+
+                </span>
+
+                <span class="share-tooltip">
+                    More Share
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <!-- =====================================
+             OPEN INVITATION
+        ====================================== -->
+
+        <a
+            href="{{ invitation_link }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="open-button">
+
+            <span class="open-button-icon">
+                💌
+            </span>
+
+            <span>
+                Open Invitation
+            </span>
+
+            <span class="open-arrow">
+                →
+            </span>
+
+        </a>
+
+
+        <!-- =====================================
+             CHECK RESPONSE
+        ====================================== -->
+
+        <a
+            href="{{ dashboard_link }}"
+            class="open-button dashboard-button">
+
+            <span class="open-button-icon">
+                🔔
+            </span>
+
+            <span>
+                Check Response
+            </span>
+
+            <span class="open-arrow">
+                →
+            </span>
+
+        </a>
+
+
+        <!-- =====================================
+             BOTTOM ACTIONS
+        ====================================== -->
+
+        <div class="success-actions">
+
+            <a href="/create">
+
+                <span>✨</span>
+
+                Create Another
+
+            </a>
+
+
+            <a href="/">
+
+                <span>🏠</span>
+
+                Home
+
+            </a>
+
+        </div>
+
+
+        <!-- =====================================
+             FOOTER
+        ====================================== -->
+
+        <p class="success-footer">
+
+            Made with
+
+            <span>❤️</span>
+
+            for someone special
+
+        </p>
+
+
+    </main>
+
+
+    <script>
+
+        /* =========================================
+           GET ELEMENTS
+        ========================================= */
+
+        const invitationLink =
+            document.getElementById("invitationLink");
+
+        const copyBtn =
+            document.getElementById("copyBtn");
+
+        const copyText =
+            document.getElementById("copyText");
+
+        const copyIcon =
+            document.getElementById("copyIcon");
+
+        const whatsappBtn =
+            document.getElementById("whatsappBtn");
+
+        const messengerBtn =
+            document.getElementById("messengerBtn");
+
+        const moreShareBtn =
+            document.getElementById("moreShareBtn");
+
+
+        /* =========================================
+           SHARE MESSAGE
+        ========================================= */
+
+        const shareMessage =
+            "Someone created a special love invitation for you. Open it ❤️";
+
+
+        /* =========================================
+           WHATSAPP
+        ========================================= */
+
+        const whatsappMessage =
+            encodeURIComponent(
+                shareMessage +
+                "\n\n" +
+                invitationLink.value
+            );
+
+
+        whatsappBtn.href =
+            "https://wa.me/?text=" +
+            whatsappMessage;
+
+
+        /* =========================================
+           MESSENGER
+        ========================================= */
+
+        messengerBtn.addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                const messengerURL =
+                    "https://www.facebook.com/sharer/sharer.php?u=" +
+                    encodeURIComponent(
+                        invitationLink.value
+                    );
+
+                window.open(
+                    messengerURL,
+                    "_blank",
+                    "width=650,height=600,left=100,top=100"
+                );
+
+            }
+        );
+
+
+        /* =========================================
+           COPY LINK
+        ========================================= */
+
+        function copyLink() {
+
+            if (
+                navigator.clipboard &&
+                window.isSecureContext
+            ) {
+
+                navigator.clipboard.writeText(
+                    invitationLink.value
+                )
+                .then(function () {
+
+                    showCopied();
+
+                })
+                .catch(function () {
+
+                    fallbackCopy();
+
+                });
+
+            }
+
+            else {
+
+                fallbackCopy();
+
+            }
+
+        }
+
+
+        /* =========================================
+           FALLBACK COPY
+        ========================================= */
+
+        function fallbackCopy() {
+
+            invitationLink.focus();
+
+            invitationLink.select();
+
+            invitationLink.setSelectionRange(
+                0,
+                99999
+            );
+
+            try {
+
+                document.execCommand("copy");
+
+                showCopied();
+
+            }
+
+            catch (error) {
+
+                alert(
+                    "Link copy করা যায়নি। Link টি manually copy করুন ❤️"
+                );
+
+            }
+
+        }
+
+
+        /* =========================================
+           COPIED EFFECT
+        ========================================= */
+
+        function showCopied() {
+
+            copyText.textContent =
+                "Copied!";
+
+            copyIcon.textContent =
+                "✓";
+
+            copyBtn.classList.add(
+                "copied"
+            );
+
+            createMiniHearts();
+
+            setTimeout(
+                function () {
+
+                    copyText.textContent =
+                        "Copy";
+
+                    copyIcon.textContent =
+                        "📋";
+
+                    copyBtn.classList.remove(
+                        "copied"
+                    );
+
+                },
+                2000
+            );
+
+        }
+
+
+        /* =========================================
+           MORE SHARE
+        ========================================= */
+
+        async function shareInvitation() {
+
+            if (
+                navigator.share
+            ) {
+
+                try {
+
+                    await navigator.share({
+
+                        title:
+                            "A Special Love Invitation ❤️",
+
+                        text:
+                            shareMessage,
+
+                        url:
+                            invitationLink.value
+
+                    });
+
+                    shareSuccessEffect();
+
+                }
+
+                catch (error) {
+
+                    /* User share cancel করলে কিছু হবে না */
+
+                }
+
+            }
+
+            else {
+
+                copyLink();
+
+                setTimeout(
+                    function () {
+
+                        alert(
+                            "এই browser-এ direct share option নেই। Link copy করা হয়েছে ❤️"
+                        );
+
+                    },
+                    350
+                );
+
+            }
+
+        }
+
+
+        /* =========================================
+           SHARE SUCCESS
+        ========================================= */
+
+        function shareSuccessEffect() {
+
+            moreShareBtn.classList.add(
+                "share-success"
+            );
+
+            setTimeout(
+                function () {
+
+                    moreShareBtn.classList.remove(
+                        "share-success"
+                    );
+
+                },
+                1200
+            );
+
+        }
+
+
+        /* =========================================
+           MINI HEARTS
+        ========================================= */
+
+        function createMiniHearts() {
+
+            const emojis = [
+                "❤️",
+                "💕",
+                "💖",
+                "✨"
+            ];
+
+
+            for (
+                let i = 0;
+                i < 8;
+                i++
+            ) {
+
+                const heart =
+                    document.createElement(
+                        "span"
+                    );
+
+
+                heart.className =
+                    "mini-success-heart";
+
+
+                heart.textContent =
+                    emojis[
+                        Math.floor(
+                            Math.random() *
+                            emojis.length
+                        )
+                    ];
+
+
+                heart.style.left =
+                    (
+                        35 +
+                        Math.random() * 30
+                    ) +
+                    "vw";
+
+
+                heart.style.top =
+                    (
+                        45 +
+                        Math.random() * 10
+                    ) +
+                    "vh";
+
+
+                heart.style.setProperty(
+                    "--random-x",
+                    (
+                        Math.random() * 160 -
+                        80
+                    ) +
+                    "px"
+                );
+
+
+                document.body.appendChild(
+                    heart
+                );
+
+
+                setTimeout(
+                    function () {
+
+                        heart.remove();
+
+                    },
+                    1400
+                );
+
+            }
+
+        }
+
+
+        /* =========================================
+           BIG FLOATING HEARTS
+        ========================================= */
+
+        window.addEventListener(
+            "load",
+            function () {
+
+                createSuccessHearts();
+
+            }
+        );
+
+
+        function createSuccessHearts() {
+
+            const emojis = [
+
+                "❤️",
+                "💕",
+                "💖",
+                "💗",
+                "💓",
+                "💞",
+                "💘"
+
+            ];
+
+
+            for (
+                let i = 0;
+                i < 22;
+                i++
+            ) {
+
+                setTimeout(
+                    function () {
+
+                        const heart =
+                            document.createElement(
+                                "span"
+                            );
+
+
+                        heart.className =
+                            "success-heart-float";
+
+
+                        heart.textContent =
+                            emojis[
+                                Math.floor(
+                                    Math.random() *
+                                    emojis.length
+                                )
+                            ];
+
+
+                        heart.style.left =
+                            Math.random() *
+                            100 +
+                            "vw";
+
+
+                        heart.style.animationDuration =
+                            (
+                                4 +
+                                Math.random() * 4
+                            ) +
+                            "s";
+
+
+                        heart.style.fontSize =
+                            (
+                                12 +
+                                Math.random() * 20
+                            ) +
+                            "px";
+
+
+                        document.body.appendChild(
+                            heart
+                        );
+
+
+                        setTimeout(
+                            function () {
+
+                                heart.remove();
+
+                            },
+                            9000
+                        );
+
+                    },
+                    i * 220
+                );
+
+            }
+
+        }
+
+
+        /* =========================================
+           BUTTON PRESS EFFECT
+        ========================================= */
+
+        document
+            .querySelectorAll(
+                ".social-share-btn, .open-button"
+            )
+            .forEach(
+                function (button) {
+
+                    button.addEventListener(
+                        "pointerdown",
+                        function () {
+
+                            button.classList.add(
+                                "button-pressed"
+                            );
+
+                        }
+                    );
+
+
+                    button.addEventListener(
+                        "pointerup",
+                        function () {
+
+                            button.classList.remove(
+                                "button-pressed"
+                            );
+
+                        }
+                    );
+
+
+                    button.addEventListener(
+                        "pointerleave",
+                        function () {
+
+                            button.classList.remove(
+                                "button-pressed"
+                            );
+
+                        }
+                    );
+
+                }
+            );
+
+    </script>
+
+</body>
+
+</html>

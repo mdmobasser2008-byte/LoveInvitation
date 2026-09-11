@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Love Invitation ❤️</title>
+
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E❤️%3C/text%3E%3C/svg%3E"
+    >
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        /* =================================
+           HOME PAGE
+        ================================= */
+
+        body {
+
+            min-height: 100vh;
+
+            overflow-x: hidden;
+
+            font-family: "Inter", sans-serif;
+
+            color: white;
+
+            background:
+                radial-gradient(
+                    circle at 15% 15%,
+                    rgba(255, 40, 130, 0.25),
+                    transparent 28%
+                ),
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(140, 40, 255, 0.22),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 50% 100%,
+                    rgba(255, 0, 100, 0.20),
+                    transparent 35%
+                ),
+                #08000d;
+        }
+
+
+        /* =================================
+           PREMIUM LOADER
+        ================================= */
+
+        #pageLoader {
+
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 99999;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            flex-direction: column;
+
+            background:
+                radial-gradient(
+                    circle at 50% 45%,
+                    rgba(255, 30, 130, 0.18),
+                    transparent 25%
+                ),
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(130, 40, 255, 0.15),
+                    transparent 30%
+                ),
+                #08000d;
+
+            transition:
+                opacity 0.9s ease,
+                visibility 0.9s ease;
+        }
+
+
+        #pageLoader.hide {
+
+            opacity: 0;
+
+            visibility: hidden;
+
+            pointer-events: none;
+        }
+
+
+        /* =================================
+           Loader Glow
+        ================================= */
+
+        .loader-glow {
+
+            position: absolute;
+
+            width: 260px;
+
+            height: 260px;
+
+            border-radius: 50%;
+
+            background: rgba(255, 0, 120, 0.20);
+
+            filter: blur(80px);
+
+            animation:
+                loaderGlow 3s ease-in-out infinite;
+        }
+
+
+        @keyframes loaderGlow {
+
+            0%,
+            100% {
+
+                transform: scale(0.8);
+
+                opacity: 0.4;
+            }
+
+            50% {
+
+                transform: scale(1.25);
+
+                opacity: 0.8;
+            }
+        }
+
+
+        /* =================================
+           Loader Heart
+        ================================= */
+
+        .loader-heart-wrap {
+
+            position: relative;
+
+            width: 115px;
+
+            height: 115px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            animation:
+                loaderFloat 2.8s ease-in-out infinite;
+        }
+
+
+        .loader-heart-circle {
+
+            position: absolute;
+
+            width: 115px;
+
+            height: 115px;
+
+            border-radius: 50%;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #ff4a98,
+                    #b80058
+                );
+
+            box-shadow:
+                0 20px 60px rgba(255, 0, 120, 0.45),
+                inset 0 4px 10px rgba(255,255,255,0.25);
+
+            animation:
+                loaderPulse 1.6s ease-in-out infinite;
+        }
+
+
+        .loader-heart {
+
+            position: relative;
+
+            z-index: 2;
+
+            font-size: 58px;
+
+            filter:
+                drop-shadow(
+                    0 8px 15px rgba(70,0,30,0.5)
+                );
+
+            animation:
+                heartBeat 1.25s ease-in-out infinite;
+        }
+
+
+        @keyframes loaderFloat {
+
+            0%,
+            100% {
+
+                transform:
+                    translateY(0)
+                    rotate(-2deg);
+            }
+
+            50% {
+
+                transform:
+                    translateY(-12px)
+                    rotate(2deg);
+            }
+        }
+
+
+        @keyframes loaderPulse {
+
+            0%,
+            100% {
+
+                transform: scale(0.92);
+
+                box-shadow:
+                    0 20px 55px rgba(255,0,120,0.35),
+                    inset 0 4px 10px rgba(255,255,255,0.25);
+            }
+
+            50% {
+
+                transform: scale(1.08);
+
+                box-shadow:
+                    0 25px 85px rgba(255,0,140,0.65),
+                    inset 0 4px 12px rgba(255,255,255,0.35);
+            }
+        }
+
+
+        @keyframes heartBeat {
+
+            0%,
+            100% {
+
+                transform: scale(0.9);
+            }
+
+            15% {
+
+                transform: scale(1.12);
+            }
+
+            30% {
+
+                transform: scale(0.96);
+            }
+
+            45% {
+
+                transform: scale(1.08);
+            }
+
+            60% {
+
+                transform: scale(0.95);
+            }
+        }
+
+
+        /* =================================
+           Loader Text
+        ================================= */
+
+        .loader-title {
+
+            position: relative;
+
+            z-index: 2;
+
+            margin-top: 35px;
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size: 28px;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #ffffff,
+                    #ff9ac5,
+                    #ffffff
+                );
+
+            background-size: 200% auto;
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+            animation:
+                loaderTitleShine 3s linear infinite;
+        }
+
+
+        @keyframes loaderTitleShine {
+
+            from {
+
+                background-position: 0% center;
+            }
+
+            to {
+
+                background-position: 200% center;
+            }
+        }
+
+
+        .loader-subtitle {
+
+            position: relative;
+
+            z-index: 2;
+
+            margin-top: 8px;
+
+            color:
+                rgba(255,255,255,0.55);
+
+            font-size: 12px;
+
+            letter-spacing: 0.8px;
+        }
+
+
+        /* =================================
+           Loading Dots
+        ================================= */
+
+        .loader-dots {
+
+            position: relative;
+
+            z-index: 2;
+
+            display: flex;
+
+            gap: 7px;
+
+            margin-top: 20px;
+        }
+
+
+        .loader-dots span {
+
+            width: 7px;
+
+            height: 7px;
+
+            border-radius: 50%;
+
+            background: #ff5a9d;
+
+            box-shadow:
+                0 0 12px rgba(255,70,150,0.8);
+
+            animation:
+                loaderDot 1.2s infinite;
+        }
+
+
+        .loader-dots span:nth-child(2) {
+
+            animation-delay: 0.18s;
+        }
+
+
+        .loader-dots span:nth-child(3) {
+
+            animation-delay: 0.36s;
+        }
+
+
+        @keyframes loaderDot {
+
+            0%,
+            100% {
+
+                transform:
+                    translateY(0)
+                    scale(0.7);
+
+                opacity: 0.3;
+            }
+
+            50% {
+
+                transform:
+                    translateY(-6px)
+                    scale(1);
+
+                opacity: 1;
+            }
+        }
+
+
+        /* =================================
+           Loader Floating Hearts
+        ================================= */
+
+        .loader-floating-heart {
+
+            position: absolute;
+
+            bottom: -30px;
+
+            opacity: 0;
+
+            pointer-events: none;
+
+            animation:
+                loaderFloatingHeart 5s linear infinite;
+        }
+
+
+        .loader-heart-1 {
+
+            left: 15%;
+
+            font-size: 18px;
+
+            animation-delay: 0s;
+        }
+
+
+        .loader-heart-2 {
+
+            left: 30%;
+
+            font-size: 14px;
+
+            animation-delay: 1.2s;
+        }
+
+
+        .loader-heart-3 {
+
+            left: 70%;
+
+            font-size: 22px;
+
+            animation-delay: 2.1s;
+        }
+
+
+        .loader-heart-4 {
+
+            left: 85%;
+
+            font-size: 16px;
+
+            animation-delay: 3.2s;
+        }
+
+
+        @keyframes loaderFloatingHeart {
+
+            0% {
+
+                opacity: 0;
+
+                transform:
+                    translateY(0)
+                    scale(0.5)
+                    rotate(0deg);
+            }
+
+            20% {
+
+                opacity: 0.8;
+            }
+
+            80% {
+
+                opacity: 0.7;
+            }
+
+            100% {
+
+                opacity: 0;
+
+                transform:
+                    translateY(-100vh)
+                    scale(1.3)
+                    rotate(360deg);
+            }
+        }
+
+
+        /* =================================
+           Background Glows
+        ================================= */
+
+        .glow {
+
+            position: fixed;
+
+            width: 420px;
+
+            height: 420px;
+
+            border-radius: 50%;
+
+            filter: blur(110px);
+
+            opacity: 0.25;
+
+            pointer-events: none;
+
+            z-index: 0;
+
+            animation:
+                glowMove 9s ease-in-out infinite alternate;
+        }
+
+
+        .glow-one {
+
+            background: #ff1674;
+
+            top: -180px;
+
+            left: -150px;
+        }
+
+
+        .glow-two {
+
+            background: #7928ff;
+
+            right: -170px;
+
+            bottom: -180px;
+
+            animation-delay: 2s;
+        }
+
+
+        @keyframes glowMove {
+
+            from {
+
+                transform:
+                    translate(0, 0)
+                    scale(1);
+            }
+
+            to {
+
+                transform:
+                    translate(60px, 50px)
+                    scale(1.18);
+            }
+        }
+
+
+        /* =================================
+           Main Hero
+        ================================= */
+
+        .home-wrapper {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            padding: 30px 18px;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .hero-card {
+
+            width: 100%;
+
+            max-width: 850px;
+
+            text-align: center;
+
+            padding: 55px 35px 48px;
+
+            border-radius: 38px;
+
+            position: relative;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,0.13),
+                    rgba(255,255,255,0.035)
+                );
+
+            border:
+                1px solid rgba(255,255,255,0.15);
+
+            backdrop-filter: blur(28px);
+
+            -webkit-backdrop-filter: blur(28px);
+
+            box-shadow:
+                0 35px 100px rgba(0,0,0,0.58),
+                inset 0 1px 0 rgba(255,255,255,0.16);
+
+            animation:
+                cardEntrance 1s ease;
+        }
+
+
+        @keyframes cardEntrance {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(45px)
+                    scale(0.93)
+                    rotateX(5deg);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0)
+                    scale(1)
+                    rotateX(0);
+            }
+        }
+
+
+        /* =================================
+           Card Shine
+        ================================= */
+
+        .hero-card::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 350px;
+
+            height: 350px;
+
+            top: -220px;
+
+            left: -160px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(255, 50, 140, 0.20);
+
+            filter: blur(60px);
+
+            pointer-events: none;
+        }
+
+
+        .hero-card::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+
+            height: 300px;
+
+            right: -180px;
+
+            bottom: -200px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(130, 50, 255, 0.18);
+
+            filter: blur(60px);
+
+            pointer-events: none;
+        }
+
+
+        /* =================================
+           Badge
+        ================================= */
+
+        .badge {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            padding: 9px 16px;
+
+            margin-bottom: 25px;
+
+            border-radius: 50px;
+
+            font-size: 11px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            color: #ffb7d5;
+
+            background:
+                rgba(255,255,255,0.07);
+
+            border:
+                1px solid rgba(255,255,255,0.12);
+
+            box-shadow:
+                0 10px 30px rgba(0,0,0,0.2);
+
+            animation:
+                badgeFloat 3s ease-in-out infinite;
+        }
+
+
+        @keyframes badgeFloat {
+
+            0%,
+            100% {
+
+                transform: translateY(0);
+            }
+
+            50% {
+
+                transform: translateY(-5px);
+            }
+        }
+
+
+        /* =================================
+           3D Heart
+        ================================= */
+
+        .heart-container {
+
+            width: 125px;
+
+            height: 125px;
+
+            margin: 0 auto 28px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle at 35% 25%,
+                    rgba(255,255,255,0.35),
+                    transparent 22%
+                ),
+                linear-gradient(
+                    145deg,
+                    #ff4a98,
+                    #c0005b
+                );
+
+            box-shadow:
+                0 25px 60px rgba(255,0,100,0.35),
+                inset 0 4px 8px rgba(255,255,255,0.30),
+                inset 0 -8px 15px rgba(80,0,40,0.25);
+
+            transform-style: preserve-3d;
+
+            animation:
+                heartFloat 3s ease-in-out infinite,
+                heartPulse 1.8s ease-in-out infinite;
+        }
+
+
+        .heart {
+
+            font-size: 65px;
+
+            filter:
+                drop-shadow(
+                    0 8px 12px rgba(80,0,30,0.35)
+                );
+
+            transform:
+                translateZ(35px);
+        }
+
+
+        @keyframes heartFloat {
+
+            0%,
+            100% {
+
+                transform:
+                    translateY(0)
+                    rotate(-2deg);
+            }
+
+            50% {
+
+                transform:
+                    translateY(-12px)
+                    rotate(2deg);
+            }
+        }
+
+
+        @keyframes heartPulse {
+
+            0%,
+            100% {
+
+                box-shadow:
+                    0 25px 60px rgba(255,0,100,0.35),
+                    inset 0 4px 8px rgba(255,255,255,0.30);
+            }
+
+            50% {
+
+                box-shadow:
+                    0 30px 85px rgba(255,0,120,0.55),
+                    inset 0 4px 8px rgba(255,255,255,0.38);
+            }
+        }
+
+
+        /* =================================
+           Heading
+        ================================= */
+
+        .hero-title {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                clamp(42px, 8vw, 76px);
+
+            line-height: 1.05;
+
+            margin-bottom: 20px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #ffffff,
+                    #ff9ac5,
+                    #ffffff,
+                    #ff9ac5,
+                    #ffffff
+                );
+
+            background-size: 250% auto;
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+            animation:
+                titleShine 5s linear infinite;
+        }
+
+
+        @keyframes titleShine {
+
+            from {
+
+                background-position: 0% center;
+            }
+
+            to {
+
+                background-position: 250% center;
+            }
+        }
+
+
+        /* =================================
+           Description
+        ================================= */
+
+        .hero-description {
+
+            max-width: 550px;
+
+            margin: 0 auto 35px;
+
+            color:
+                rgba(255,255,255,0.68);
+
+            font-size: 16px;
+
+            line-height: 1.8;
+        }
+
+
+        .hero-description strong {
+
+            color: #ff9bc5;
+        }
+
+
+        /* =================================
+           Create Button
+        ================================= */
+
+        .create-button {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            min-width: 250px;
+
+            min-height: 62px;
+
+            padding: 0 28px;
+
+            border-radius: 20px;
+
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 16px;
+
+            font-weight: 800;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff3c91,
+                    #d00062
+                );
+
+            border:
+                1px solid rgba(255,255,255,0.18);
+
+            box-shadow:
+                0 18px 45px rgba(255,0,100,0.30),
+                inset 0 2px 5px rgba(255,255,255,0.25);
+
+            position: relative;
+
+            overflow: hidden;
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+
+        .create-button::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+
+            left: -120%;
+
+            width: 70%;
+
+            height: 100%;
+
+            transform:
+                skewX(-25deg);
+
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    rgba(255,255,255,0.35),
+                    transparent
+                );
+
+            animation:
+                buttonShine 3.5s infinite;
+        }
+
+
+        @keyframes buttonShine {
+
+            0% {
+
+                left: -120%;
+            }
+
+            45%,
+            100% {
+
+                left: 140%;
+            }
+        }
+
+
+        .create-button:hover {
+
+            transform:
+                translateY(-6px)
+                scale(1.035);
+
+            box-shadow:
+                0 25px 65px rgba(255,0,120,0.45),
+                inset 0 2px 7px rgba(255,255,255,0.30);
+        }
+
+
+        .button-icon {
+
+            font-size: 23px;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .button-text {
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .button-arrow {
+
+            font-size: 22px;
+
+            position: relative;
+
+            z-index: 2;
+
+            transition:
+                transform 0.3s ease;
+        }
+
+
+        .create-button:hover .button-arrow {
+
+            transform:
+                translateX(6px);
+        }
+
+
+        /* =================================
+           Bottom Text
+        ================================= */
+
+        .bottom-text {
+
+            margin-top: 28px;
+
+            font-size: 11px;
+
+            color:
+                rgba(255,255,255,0.38);
+
+            letter-spacing: 0.5px;
+        }
+
+
+        /* =================================
+           Floating Hearts
+        ================================= */
+
+        .floating-heart {
+
+            position: fixed;
+
+            bottom: -50px;
+
+            font-size: 22px;
+
+            opacity: 0;
+
+            pointer-events: none;
+
+            z-index: 1;
+
+            animation:
+                floatingHeart 8s linear infinite;
+        }
+
+
+        .h1 {
+
+            left: 7%;
+
+            animation-delay: 0s;
+        }
+
+
+        .h2 {
+
+            left: 20%;
+
+            animation-delay: 2s;
+        }
+
+
+        .h3 {
+
+            left: 40%;
+
+            animation-delay: 4s;
+        }
+
+
+        .h4 {
+
+            left: 65%;
+
+            animation-delay: 1s;
+        }
+
+
+        .h5 {
+
+            left: 82%;
+
+            animation-delay: 5s;
+        }
+
+
+        .h6 {
+
+            left: 95%;
+
+            animation-delay: 3s;
+        }
+
+
+        @keyframes floatingHeart {
+
+            0% {
+
+                opacity: 0;
+
+                transform:
+                    translateY(0)
+                    rotate(0deg)
+                    scale(0.7);
+            }
+
+            15% {
+
+                opacity: 0.8;
+            }
+
+            85% {
+
+                opacity: 0.7;
+            }
+
+            100% {
+
+                opacity: 0;
+
+                transform:
+                    translateY(-110vh)
+                    rotate(360deg)
+                    scale(1.3);
+            }
+        }
+
+
+        /* =================================
+           Sparkles
+        ================================= */
+
+        .sparkle {
+
+            position: fixed;
+
+            width: 5px;
+
+            height: 5px;
+
+            border-radius: 50%;
+
+            background: white;
+
+            box-shadow:
+                0 0 15px white;
+
+            opacity: 0;
+
+            animation:
+                sparkleAnim 3s ease-in-out infinite;
+
+            z-index: 1;
+
+            pointer-events: none;
+        }
+
+
+        .s1 {
+
+            top: 18%;
+
+            left: 12%;
+
+            animation-delay: 0s;
+        }
+
+
+        .s2 {
+
+            top: 35%;
+
+            right: 14%;
+
+            animation-delay: 1s;
+        }
+
+
+        .s3 {
+
+            bottom: 20%;
+
+            left: 18%;
+
+            animation-delay: 2s;
+        }
+
+
+        .s4 {
+
+            bottom: 30%;
+
+            right: 20%;
+
+            animation-delay: 1.5s;
+        }
+
+
+        @keyframes sparkleAnim {
+
+            0%,
+            100% {
+
+                opacity: 0;
+
+                transform:
+                    scale(0.3);
+            }
+
+            50% {
+
+                opacity: 1;
+
+                transform:
+                    scale(1.5);
+            }
+        }
+
+
+        /* =================================
+           MOBILE
+        ================================= */
+
+        @media (max-width: 600px) {
+
+            .home-wrapper {
+
+                padding:
+                    18px 12px;
+            }
+
+
+            .hero-card {
+
+                padding:
+                    40px 20px 32px;
+
+                border-radius: 28px;
+            }
+
+
+            .heart-container {
+
+                width: 100px;
+
+                height: 100px;
+
+                margin-bottom: 23px;
+            }
+
+
+            .heart {
+
+                font-size: 52px;
+            }
+
+
+            .hero-title {
+
+                font-size: 43px;
+            }
+
+
+            .hero-description {
+
+                font-size: 14px;
+
+                line-height: 1.7;
+
+                margin-bottom: 28px;
+            }
+
+
+            .create-button {
+
+                width: 100%;
+
+                min-width: 0;
+
+                min-height: 58px;
+            }
+
+
+            .badge {
+
+                font-size: 9px;
+
+                letter-spacing: 1px;
+            }
+
+
+            .loader-title {
+
+                font-size: 24px;
+            }
+
+
+            .loader-subtitle {
+
+                font-size: 11px;
+            }
+
+
+            .loader-heart-wrap {
+
+                width: 100px;
+
+                height: 100px;
+            }
+
+
+            .loader-heart-circle {
+
+                width: 100px;
+
+                height: 100px;
+            }
+
+
+            .loader-heart {
+
+                font-size: 50px;
+            }
+        }
+
+
+        /* =================================
+           REDUCED MOTION
+        ================================= */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+
+                animation-duration: 0.01ms !important;
+
+                animation-iteration-count: 1 !important;
+
+                scroll-behavior: auto !important;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         PREMIUM LOADING SCREEN
+    ================================= -->
+
+    <div id="pageLoader">
+
+        <div class="loader-glow"></div>
+
+
+        <div class="loader-floating-heart loader-heart-1">
+            ❤️
+        </div>
+
+        <div class="loader-floating-heart loader-heart-2">
+            💕
+        </div>
+
+        <div class="loader-floating-heart loader-heart-3">
+            💗
+        </div>
+
+        <div class="loader-floating-heart loader-heart-4">
+            💖
+        </div>
+
+
+        <div class="loader-heart-wrap">
+
+            <div class="loader-heart-circle"></div>
+
+            <div class="loader-heart">
+                ❤️
+            </div>
+
+        </div>
+
+
+        <div class="loader-title">
+            Love Invitation
+        </div>
+
+
+        <div class="loader-subtitle">
+            Preparing something special for you...
+        </div>
+
+
+        <div class="loader-dots">
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================
+         BACKGROUND GLOW
+    ================================= -->
+
+    <div class="glow glow-one"></div>
+
+    <div class="glow glow-two"></div>
+
+
+    <!-- =================================
+         FLOATING HEARTS
+    ================================= -->
+
+    <div class="floating-heart h1">
+        ❤️
+    </div>
+
+    <div class="floating-heart h2">
+        💕
+    </div>
+
+    <div class="floating-heart h3">
+        💗
+    </div>
+
+    <div class="floating-heart h4">
+        💖
+    </div>
+
+    <div class="floating-heart h5">
+        💘
+    </div>
+
+    <div class="floating-heart h6">
+        💝
+    </div>
+
+
+    <!-- =================================
+         SPARKLES
+    ================================= -->
+
+    <div class="sparkle s1"></div>
+
+    <div class="sparkle s2"></div>
+
+    <div class="sparkle s3"></div>
+
+    <div class="sparkle s4"></div>
+
+
+    <!-- =================================
+         MAIN HOME PAGE
+    ================================= -->
+
+    <main class="home-wrapper">
+
+
+        <section class="hero-card">
+
+
+            <!-- Badge -->
+
+            <div class="badge">
+
+                ❤️
+
+                A little place for big feelings
+
+            </div>
+
+
+            <!-- 3D Heart -->
+
+            <div class="heart-container">
+
+                <div class="heart">
+                    ❤️
+                </div>
+
+            </div>
+
+
+            <!-- Heading -->
+
+            <h1 class="hero-title">
+
+                Love Invitation
+
+            </h1>
+
+
+            <!-- Description -->
+
+            <p class="hero-description">
+
+                Create a beautiful, personal invitation
+                for someone
+                <strong>truly special.</strong>
+
+                <br>
+
+                Sometimes one little question can
+                become the beginning of a beautiful story. 💕
+
+            </p>
+
+
+            <!-- Create Button -->
+
+            <a
+                href="{{ url_for('create') }}"
+                class="create-button"
+            >
+
+                <span class="button-icon">
+                    💌
+                </span>
+
+                <span class="button-text">
+                    Create Invitation
+                </span>
+
+                <span class="button-arrow">
+                    →
+                </span>
+
+            </a>
+
+
+            <!-- Bottom Text -->
+
+            <div class="bottom-text">
+
+                Made with ❤️ for unforgettable moments
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =================================
+         JAVASCRIPT
+    ================================= -->
+
+    <script>
+
+        /* =====================================
+           PREMIUM LOADING SCREEN
+        ===================================== */
+
+        window.addEventListener(
+            "load",
+            function () {
+
+                setTimeout(
+                    function () {
+
+                        const loader =
+                            document.getElementById(
+                                "pageLoader"
+                            );
+
+
+                        if (loader) {
+
+                            loader.classList.add(
+                                "hide"
+                            );
+
+                        }
+
+                    },
+                    1300
+                );
+
+            }
+        );
+
+
+        /* =====================================
+           MOUSE PARALLAX
+        ===================================== */
+
+        const card =
+            document.querySelector(".hero-card");
+
+
+        document.addEventListener(
+            "mousemove",
+            function (event) {
+
+                if (
+                    window.innerWidth <= 600 ||
+                    !card
+                ) {
+
+                    return;
+
+                }
+
+
+                const x =
+                    (
+                        window.innerWidth / 2
+                        -
+                        event.clientX
+                    ) / 80;
+
+
+                const y =
+                    (
+                        window.innerHeight / 2
+                        -
+                        event.clientY
+                    ) / 80;
+
+
+                card.style.transform =
+                    `perspective(1000px)
+                     rotateY(${-x}deg)
+                     rotateX(${y}deg)`;
+
+            }
+        );
+
+
+        /* Mouse leave করলে normal */
+
+        document.addEventListener(
+            "mouseleave",
+            function () {
+
+                if (!card) {
+
+                    return;
+
+                }
+
+
+                card.style.transform =
+                    "perspective(1000px) rotateY(0deg) rotateX(0deg)";
+
+            }
+        );
+
+
+        /* =====================================
+           BUTTON CLICK EFFECT
+        ===================================== */
+
+        const button =
+            document.querySelector(
+                ".create-button"
+            );
+
+
+        if (button) {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    button.style.transform =
+                        "scale(0.97)";
+
+
+                    setTimeout(
+                        function () {
+
+                            button.style.transform =
+                                "";
+
+                        },
+                        150
+                    );
+
+                }
+            );
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

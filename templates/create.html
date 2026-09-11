@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Create Love Invitation ❤️</title>
+
+<link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E❤️%3C/text%3E%3C/svg%3E"
+>
+
+<link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}"
+>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet"
+>
+
+<style>
+
+    /* ==============================
+       RESET
+    ============================== */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* ==============================
+       BODY
+    ============================== */
+
+    body {
+        min-height: 100vh;
+        overflow-x: hidden;
+
+        font-family: "Inter", sans-serif;
+
+        color: #ffffff;
+
+        background:
+            radial-gradient(
+                circle at 15% 10%,
+                rgba(255, 35, 120, 0.25),
+                transparent 28%
+            ),
+            radial-gradient(
+                circle at 85% 15%,
+                rgba(125, 40, 255, 0.22),
+                transparent 30%
+            ),
+            radial-gradient(
+                circle at 50% 100%,
+                rgba(255, 0, 100, 0.18),
+                transparent 35%
+            ),
+            #08000d;
+    }
+
+
+    /* ==============================
+       BACKGROUND GLOW
+    ============================== */
+
+    .create-glow {
+        position: fixed;
+
+        width: 420px;
+        height: 420px;
+
+        border-radius: 50%;
+
+        filter: blur(110px);
+
+        opacity: 0.22;
+
+        pointer-events: none;
+
+        z-index: 0;
+
+        animation:
+            glowAnimation 9s ease-in-out infinite alternate;
+    }
+
+    .glow-left {
+        top: -180px;
+        left: -160px;
+
+        background: #ff1674;
+    }
+
+    .glow-right {
+        right: -170px;
+        bottom: -180px;
+
+        background: #7928ff;
+
+        animation-delay: 2s;
+    }
+
+    @keyframes glowAnimation {
+
+        from {
+            transform:
+                translate(0, 0)
+                scale(1);
+        }
+
+        to {
+            transform:
+                translate(60px, 45px)
+                scale(1.2);
+        }
+    }
+
+
+    /* ==============================
+       FLOATING HEARTS
+    ============================== */
+
+    .floating-hearts span {
+        position: fixed;
+
+        bottom: -50px;
+
+        font-size: 22px;
+
+        opacity: 0;
+
+        pointer-events: none;
+
+        z-index: 1;
+
+        animation:
+            floatHeart 8s linear infinite;
+    }
+
+    .floating-hearts span:nth-child(1) {
+        left: 7%;
+        animation-delay: 0s;
+    }
+
+    .floating-hearts span:nth-child(2) {
+        left: 20%;
+        animation-delay: 2s;
+    }
+
+    .floating-hearts span:nth-child(3) {
+        left: 38%;
+        animation-delay: 4s;
+    }
+
+    .floating-hearts span:nth-child(4) {
+        left: 57%;
+        animation-delay: 1s;
+    }
+
+    .floating-hearts span:nth-child(5) {
+        left: 72%;
+        animation-delay: 3s;
+    }
+
+    .floating-hearts span:nth-child(6) {
+        left: 84%;
+        animation-delay: 5s;
+    }
+
+    .floating-hearts span:nth-child(7) {
+        left: 92%;
+        animation-delay: 2.5s;
+    }
+
+    .floating-hearts span:nth-child(8) {
+        left: 48%;
+        animation-delay: 6s;
+    }
+
+    @keyframes floatHeart {
+
+        0% {
+            opacity: 0;
+
+            transform:
+                translateY(0)
+                rotate(0deg)
+                scale(0.7);
+        }
+
+        15% {
+            opacity: 0.75;
+        }
+
+        85% {
+            opacity: 0.65;
+        }
+
+        100% {
+            opacity: 0;
+
+            transform:
+                translateY(-110vh)
+                rotate(360deg)
+                scale(1.3);
+        }
+    }
+
+
+    /* ==============================
+       MAIN PAGE
+    ============================== */
+
+    .create-page {
+        min-height: 100vh;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        padding: 30px 15px;
+
+        position: relative;
+
+        z-index: 2;
+    }
+
+
+    /* ==============================
+       MAIN CARD
+    ============================== */
+
+    .create-card {
+        width: 100%;
+        max-width: 650px;
+
+        padding: 42px 38px;
+
+        border-radius: 34px;
+
+        position: relative;
+
+        overflow: hidden;
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(255,255,255,0.13),
+                rgba(255,255,255,0.035)
+            );
+
+        border:
+            1px solid rgba(255,255,255,0.16);
+
+        backdrop-filter: blur(28px);
+        -webkit-backdrop-filter: blur(28px);
+
+        box-shadow:
+            0 35px 100px rgba(0,0,0,0.58),
+            inset 0 1px 0
+            rgba(255,255,255,0.16);
+
+        animation:
+            cardIn 0.8s ease;
+    }
+
+    @keyframes cardIn {
+
+        from {
+            opacity: 0;
+
+            transform:
+                translateY(45px)
+                scale(0.94);
+        }
+
+        to {
+            opacity: 1;
+
+            transform:
+                translateY(0)
+                scale(1);
+        }
+    }
+
+
+    /* ==============================
+       CARD LIGHT
+    ============================== */
+
+    .create-card::before {
+        content: "";
+
+        position: absolute;
+
+        width: 350px;
+        height: 350px;
+
+        top: -220px;
+        left: -180px;
+
+        border-radius: 50%;
+
+        background:
+            rgba(255,50,140,0.18);
+
+        filter: blur(60px);
+
+        pointer-events: none;
+    }
+
+    .create-card::after {
+        content: "";
+
+        position: absolute;
+
+        width: 280px;
+        height: 280px;
+
+        right: -170px;
+        bottom: -180px;
+
+        border-radius: 50%;
+
+        background:
+            rgba(130,50,255,0.15);
+
+        filter: blur(60px);
+
+        pointer-events: none;
+    }
+
+
+    /* ==============================
+       TOP HEART
+    ============================== */
+
+    .create-heart {
+        width: 82px;
+        height: 82px;
+
+        margin:
+            0 auto 20px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        font-size: 38px;
+
+        background:
+            linear-gradient(
+                145deg,
+                #ff4b9a,
+                #c0005c
+            );
+
+        box-shadow:
+            0 18px 45px
+            rgba(255,0,110,0.34),
+
+            inset 0 3px 7px
+            rgba(255,255,255,0.32);
+
+        animation:
+            heartBeat 1.7s ease-in-out infinite;
+    }
+
+    @keyframes heartBeat {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.08);
+        }
+    }
+
+
+    /* ==============================
+       TITLE
+    ============================== */
+
+    .create-title {
+        text-align: center;
+
+        font-family:
+            "Playfair Display",
+            serif;
+
+        font-size:
+            clamp(34px, 7vw, 52px);
+
+        line-height: 1.1;
+
+        margin-bottom: 12px;
+
+        background:
+            linear-gradient(
+                90deg,
+                #ffffff,
+                #ff9bc7,
+                #ffffff
+            );
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .create-title span {
+        display: block;
+    }
+
+    .create-subtitle {
+        text-align: center;
+
+        color:
+            rgba(255,255,255,0.72);
+
+        font-size: 14px;
+
+        margin-bottom: 32px;
+
+        line-height: 1.7;
+    }
+
+
+    /* ==============================
+       FORM
+    ============================== */
+
+    .love-form {
+        position: relative;
+
+        z-index: 5;
+    }
+
+
+    /* ==============================
+       INPUT GROUP
+    ============================== */
+
+    .input-group {
+        margin-bottom: 21px;
+
+        position: relative;
+
+        transition:
+            transform 0.3s ease;
+    }
+
+    .input-group label {
+        display: block;
+
+        margin-bottom: 9px;
+
+        font-size: 13px;
+
+        font-weight: 800;
+
+        color: #ffd1e4;
+
+        letter-spacing: 0.4px;
+
+        text-shadow:
+            0 1px 8px
+            rgba(255,80,150,0.20);
+    }
+
+
+    /* ==============================
+       INPUT WRAPPER
+    ============================== */
+
+    .input-wrapper,
+    .textarea-wrapper {
+        position: relative;
+
+        width: 100%;
+    }
+
+
+    /* ==============================
+       ICON
+    ============================== */
+
+    .input-icon {
+        position: absolute;
+
+        left: 17px;
+        top: 50%;
+
+        width: 24px;
+        height: 24px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        transform:
+            translateY(-50%);
+
+        font-size: 19px;
+
+        line-height: 1;
+
+        z-index: 3;
+
+        pointer-events: none;
+    }
+
+    .textarea-icon {
+        position: absolute;
+
+        left: 17px;
+        top: 18px;
+
+        width: 24px;
+        height: 24px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        font-size: 19px;
+
+        line-height: 1;
+
+        z-index: 3;
+
+        pointer-events: none;
+    }
+
+
+    /* ==============================
+       INPUT + TEXTAREA
+    ============================== */
+
+    .love-form input,
+    .love-form textarea {
+        width: 100%;
+
+        outline: none;
+
+        border:
+            1px solid
+            rgba(255,255,255,0.28);
+
+        border-radius: 17px;
+
+        font-family:
+            "Inter",
+            sans-serif;
+
+        color: #111111;
+
+        background:
+            rgba(255,255,255,0.94);
+
+        box-shadow:
+            0 8px 25px
+            rgba(0,0,0,0.16),
+
+            inset 0 1px 2px
+            rgba(0,0,0,0.08);
+
+        transition:
+            border-color 0.3s ease,
+            box-shadow 0.3s ease,
+            background 0.3s ease,
+            transform 0.3s ease;
+    }
+
+
+    /* ==============================
+       NAME INPUT
+    ============================== */
+
+    .love-form input {
+        height: 57px;
+
+        padding:
+            0 18px 0 55px;
+
+        font-size: 14px;
+
+        font-weight: 600;
+
+        line-height: 57px;
+    }
+
+
+    /* ==============================
+       MESSAGE BOX
+    ============================== */
+
+    .love-form textarea {
+        min-height: 145px;
+
+        resize: vertical;
+
+        display: block;
+
+        padding:
+            17px 18px 17px 55px;
+
+        font-size: 14px;
+
+        font-weight: 600;
+
+        line-height: 1.7;
+    }
+
+
+    /* ==============================
+       PLACEHOLDER
+    ============================== */
+
+    .love-form input::placeholder,
+    .love-form textarea::placeholder {
+        color: #777777;
+
+        opacity: 1;
+
+        font-weight: 500;
+    }
+
+
+    /* ==============================
+       FOCUS
+    ============================== */
+
+    .love-form input:focus,
+    .love-form textarea:focus {
+        border-color:
+            #ff4f9a;
+
+        background:
+            #ffffff;
+
+        box-shadow:
+            0 0 0 4px
+            rgba(255,40,130,0.13),
+
+            0 15px 35px
+            rgba(0,0,0,0.22);
+
+        transform:
+            translateY(-2px);
+    }
+
+
+    /* ==============================
+       CHARACTER COUNT
+    ============================== */
+
+    .character-count {
+        text-align: right;
+
+        margin-top: 7px;
+
+        font-size: 11px;
+
+        color:
+            rgba(255,255,255,0.55);
+    }
+
+    #charCount {
+        color: #ff9fca;
+
+        font-weight: 800;
+    }
+
+
+    /* ==============================
+       CREATE BUTTON
+    ============================== */
+
+    .create-submit {
+        width: 100%;
+
+        min-height: 62px;
+
+        margin-top: 5px;
+
+        border: none;
+
+        border-radius: 19px;
+
+        color: #ffffff;
+
+        cursor: pointer;
+
+        font-family:
+            "Inter",
+            sans-serif;
+
+        font-size: 15px;
+
+        font-weight: 800;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 12px;
+
+        position: relative;
+
+        overflow: hidden;
+
+        background:
+            linear-gradient(
+                135deg,
+                #ff328a,
+                #c8005d
+            );
+
+        box-shadow:
+            0 18px 45px
+            rgba(255,0,100,0.30),
+
+            inset 0 2px 6px
+            rgba(255,255,255,0.24);
+
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+    }
+
+
+    /* ==============================
+       BUTTON SHINE
+    ============================== */
+
+    .create-submit::before {
+        content: "";
+
+        position: absolute;
+
+        top: 0;
+        left: -120%;
+
+        width: 65%;
+        height: 100%;
+
+        transform:
+            skewX(-25deg);
+
+        background:
+            linear-gradient(
+                90deg,
+                transparent,
+                rgba(255,255,255,0.38),
+                transparent
+            );
+
+        animation:
+            buttonLight 3.5s infinite;
+    }
+
+    @keyframes buttonLight {
+
+        0% {
+            left: -120%;
+        }
+
+        45%,
+        100% {
+            left: 140%;
+        }
+    }
+
+
+    /* ==============================
+       HOVER
+    ============================== */
+
+    .create-submit:hover {
+        transform:
+            translateY(-5px)
+            scale(1.015);
+
+        box-shadow:
+            0 25px 65px
+            rgba(255,0,120,0.42),
+
+            inset 0 2px 8px
+            rgba(255,255,255,0.30);
+    }
+
+    .create-submit:active {
+        transform:
+            scale(0.97);
+    }
+
+    .button-text,
+    .button-heart {
+        position: relative;
+
+        z-index: 2;
+    }
+
+    .button-heart {
+        font-size: 22px;
+
+        animation:
+            miniHeart 1.3s infinite;
+    }
+
+    @keyframes miniHeart {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.25);
+        }
+    }
+
+
+    /* ==============================
+       LOADING
+    ============================== */
+
+    .create-submit.loading {
+        pointer-events: none;
+
+        opacity: 0.88;
+    }
+
+    .create-submit.loading .button-heart {
+        animation:
+            spinHeart
+            0.8s
+            linear
+            infinite;
+    }
+
+    @keyframes spinHeart {
+
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    /* ==============================
+       BACK LINK
+    ============================== */
+
+    .back-link {
+        display: block;
+
+        width: fit-content;
+
+        margin:
+            24px auto 0;
+
+        color:
+            #ffc1da;
+
+        text-decoration: none;
+
+        font-size: 12px;
+
+        font-weight: 600;
+
+        transition:
+            0.3s ease;
+    }
+
+    .back-link:hover {
+        color: #ffffff;
+
+        transform:
+            translateX(-3px);
+    }
+
+
+    /* ==============================
+       FOOTER
+    ============================== */
+
+    .secure-text {
+        text-align: center;
+
+        margin-top: 19px;
+
+        color:
+            rgba(255,255,255,0.45);
+
+        font-size: 10px;
+
+        letter-spacing: 0.5px;
+    }
+
+
+    /* ==============================
+       MOBILE
+    ============================== */
+
+    @media (max-width: 600px) {
+
+        .create-page {
+            padding:
+                18px 12px;
+        }
+
+        .create-card {
+            padding:
+                32px 18px 28px;
+
+            border-radius: 27px;
+        }
+
+        .create-heart {
+            width: 72px;
+            height: 72px;
+
+            font-size: 33px;
+        }
+
+        .create-title {
+            font-size: 36px;
+        }
+
+        .create-subtitle {
+            font-size: 13px;
+
+            margin-bottom: 27px;
+        }
+
+        .love-form input {
+            height: 55px;
+
+            line-height: 55px;
+        }
+
+        .love-form textarea {
+            min-height: 135px;
+        }
+
+        .create-submit {
+            min-height: 58px;
+        }
+    }
+
+
+    /* ==============================
+       REDUCED MOTION
+    ============================== */
+
+    @media (prefers-reduced-motion: reduce) {
+
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<!-- Background Glow -->
+
+<div class="create-glow glow-left"></div>
+
+<div class="create-glow glow-right"></div>
+
+
+<!-- Floating Hearts -->
+
+<div class="floating-hearts">
+
+    <span>❤️</span>
+    <span>💕</span>
+    <span>💗</span>
+    <span>💖</span>
+    <span>💓</span>
+    <span>❤️</span>
+    <span>💞</span>
+    <span>💘</span>
+
+</div>
+
+
+<!-- Main Page -->
+
+<main class="create-page">
+
+    <section class="create-card">
+
+        <!-- Top Heart -->
+
+        <div class="create-heart">
+            💖
+        </div>
+
+
+        <!-- Title -->
+
+        <h1 class="create-title">
+
+            Create Your
+
+            <span>
+                Love Invitation
+            </span>
+
+        </h1>
+
+
+        <p class="create-subtitle">
+
+            Make something beautiful
+            for someone special ❤️
+
+        </p>
+
+
+        <!-- Form -->
+
+        <form
+            method="POST"
+            action="/invitation"
+            class="love-form"
+            id="loveForm"
+        >
+
+
+            <!-- Sender -->
+
+            <div class="input-group">
+
+                <label for="sender">
+                    Your Name
+                </label>
+
+                <div class="input-wrapper">
+
+                    <span class="input-icon">
+                        👤
+                    </span>
+
+                    <input
+                        id="sender"
+                        type="text"
+                        name="sender"
+                        placeholder="Enter your name"
+                        autocomplete="off"
+                        maxlength="50"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Receiver -->
+
+            <div class="input-group">
+
+                <label for="receiver">
+                    Special Person's Name
+                </label>
+
+                <div class="input-wrapper">
+
+                    <span class="input-icon">
+                        💕
+                    </span>
+
+                    <input
+                        id="receiver"
+                        type="text"
+                        name="receiver"
+                        placeholder="Enter their name"
+                        autocomplete="off"
+                        maxlength="50"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Love Message -->
+
+            <div class="input-group">
+
+                <label for="message">
+                    Your Love Message
+                </label>
+
+                <div class="textarea-wrapper">
+
+                    <span class="textarea-icon">
+                        💌
+                    </span>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Write something from your heart..."
+                        maxlength="500"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Character Counter -->
+
+                <div class="character-count">
+
+                    <span id="charCount">
+                        0
+                    </span>
+
+                    /500
+
+                </div>
+
+            </div>
+
+
+            <!-- Submit Button -->
+
+            <button
+                type="submit"
+                class="create-submit"
+                id="createButton"
+            >
+
+                <span class="button-text">
+                    Create My Invitation
+                </span>
+
+                <span class="button-heart">
+                    💕
+                </span>
+
+            </button>
+
+        </form>
+
+
+        <!-- Back -->
+
+        <a
+            href="{{ url_for('home') }}"
+            class="back-link"
+        >
+            ← Back to Home
+        </a>
+
+
+        <!-- Footer -->
+
+        <p class="secure-text">
+            Made with ❤️ for someone special
+        </p>
+
+    </section>
+
+</main>
+
+
+<script>
+
+    /* ==============================
+       MESSAGE CHARACTER COUNTER
+    ============================== */
+
+    const messageBox =
+        document.getElementById("message");
+
+    const charCount =
+        document.getElementById("charCount");
+
+
+    messageBox.addEventListener(
+        "input",
+        function () {
+
+            charCount.textContent =
+                this.value.length;
+
+        }
+    );
+
+
+    /* ==============================
+       FORM LOADING ANIMATION
+    ============================== */
+
+    const form =
+        document.getElementById("loveForm");
+
+    const button =
+        document.getElementById("createButton");
+
+
+    form.addEventListener(
+        "submit",
+        function () {
+
+            button.classList.add(
+                "loading"
+            );
+
+            button.querySelector(
+                ".button-text"
+            ).textContent =
+                "Creating Magic...";
+
+            button.querySelector(
+                ".button-heart"
+            ).textContent =
+                "✨";
+
+        }
+    );
+
+
+    /* ==============================
+       INPUT FLOATING EFFECT
+    ============================== */
+
+    const inputs =
+        document.querySelectorAll(
+            ".love-form input, .love-form textarea"
+        );
+
+
+    inputs.forEach(
+        function(input) {
+
+            input.addEventListener(
+                "focus",
+                function() {
+
+                    const group =
+                        this.closest(
+                            ".input-group"
+                        );
+
+                    if (group) {
+                        group.style.transform =
+                            "translateY(-2px)";
+                    }
+
+                }
+            );
+
+
+            input.addEventListener(
+                "blur",
+                function() {
+
+                    const group =
+                        this.closest(
+                            ".input-group"
+                        );
+
+                    if (group) {
+                        group.style.transform =
+                            "translateY(0)";
+                    }
+
+                }
+            );
+
+        }
+    );
+
+
+    /* ==============================
+       BUTTON PRESS EFFECT
+    ============================== */
+
+    button.addEventListener(
+        "pointerdown",
+        function() {
+
+            this.style.transform =
+                "scale(0.97)";
+
+        }
+    );
+
+
+    button.addEventListener(
+        "pointerup",
+        function() {
+
+            if (!this.classList.contains("loading")) {
+
+                this.style.transform =
+                    "";
+
+            }
+
+        }
+    );
+
+</script>
+```
+
+</body>
+
+</html>
